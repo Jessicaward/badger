@@ -1247,7 +1247,7 @@ window.onload = function () {
     }
 
     function DigitalBullStudiosFunction() {
-        window.location.href = 'https://www.DigitalBullStudios.com/';
+        window.location.href = 'https://www.digitalbullstudios.com/';
     }
 
     function SoundFunction() {
