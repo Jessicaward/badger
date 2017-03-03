@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Badger Hop 0.9</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    
+    <!-- Do not delete -->
+    <!-- STOPS APP FROM SCROLLING -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name = "viewport" content = "user-scalable=no,width=device-width" />
+    <script type="text/javascript">
+        document.ontouchmove = function(e){ e.preventDefault(); }
+    </script>
+    <!-- End do not delete -->
+    
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+        document.body.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+            }, false);
+        }, false);
+    </script>
+    
+    <script type="text/javascript" src="scripts/phaser.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="scripts/cordova.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+</body>
+</html>
