@@ -218,9 +218,7 @@ window.onload = function () {
 
     //Generate Random Number for the background
     var BackgroundNumber = Math.random();
-
-    var test = 0;
-
+    
     //If the local file "LanguageFile" is set to English
     if (localStorage.getItem("LanguageFile") == "English") {
         Language = "English";
@@ -314,34 +312,7 @@ window.onload = function () {
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             this.scale.pageAlignVertically = true;
 
-            if (LevelType == "Hilly") {
-                hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
-                hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
-                hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
-                hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
-            }
-            else if (LevelType == "City Day") {
-                cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
-                cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
-            }
-            else if (LevelType == "City Night") {
-                cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-                cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
-            }
+            createBackgrounds();
             
             if (Language == "English") {
                 enPlayButton = game.add.button(enPlayButtonX, enPlayButtonY, 'enPlayButton', PlayFunction, this);
@@ -433,34 +404,7 @@ window.onload = function () {
             //Scale to screen size
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             
-            if (LevelType == "Hilly") {
-                hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
-                hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
-                hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
-                hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
-            }
-            else if (LevelType == "City Day") {
-                cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
-                cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
-            }
-            else if (LevelType == "City Night") {
-                cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-                cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
-            }
+            createBackgrounds();
 
             enSoundOnButton = game.add.button(enSoundOnButtonX, enSoundOnButtonY, 'enSoundOnButton', SoundFunction, this);
             enSoundOffButton = game.add.button(enSoundOffButtonX, enSoundOffButtonY, 'enSoundOffButton', SoundFunction, this);
@@ -622,34 +566,7 @@ window.onload = function () {
             //Scale to screen size
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
-            if (LevelType == "Hilly") {
-                hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
-                hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
-                hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
-                hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
-            }
-            else if (LevelType == "City Day") {
-                cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
-                cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
-            }
-            else if (LevelType == "City Night") {
-                cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-                cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
-            }
+            createBackgrounds();
 
             if (Language == "English") {
                 enAYS = game.add.sprite(enAYSX, enAYSY, 'enAYS');
@@ -759,34 +676,7 @@ window.onload = function () {
             //Scale to screen size
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
-            if (LevelType == "Hilly") {
-                hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
-                hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
-                hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
-                hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
-            }
-            else if (LevelType == "City Day") {
-                cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
-                cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
-            }
-            else {
-                cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-                cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
-            }
+            createBackgrounds();
 
             IsJumping = false;
             IsFalling = false;
@@ -837,37 +727,7 @@ window.onload = function () {
         },
     create:function()
         {
-            if (LevelType == "Hilly")
-            {
-                hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
-                hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
-                hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
-                hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
-                hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
-                hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
-                hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
-            }
-            else if (LevelType == "City Day")
-            {
-                cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
-                cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
-                cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
-                cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
-            }
-            else
-            {
-                cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-                cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-                cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-                cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
-            }
+            createBackgrounds();
             
             if (Language == "English")
             {
@@ -954,6 +814,40 @@ window.onload = function () {
             
             restartButton = game.add.button(restartButtonX, restartButtonY, 'restartButton', RestartFunction, this);
             restartButton.onInputDown.add(RestartFunction, this);
+        }
+    }
+    
+    function createBackgrounds(){
+        if (LevelType == "Hilly")
+        {
+            hillyBackgroundSky1 = game.add.sprite(hillyBackgroundSky1Xpos, hillyBackgroundSky1Ypos, 'hillyBackgroundSKY');
+            hillyBackgroundSky2 = game.add.sprite(hillyBackgroundSky2Xpos, hillyBackgroundSky2Ypos, 'hillyBackgroundSKY');
+            hillyBackgroundBackHills1 = game.add.sprite(hillyBackgroundBackHills1Xpos, hillyBackgroundBackHills1Ypos, 'hillyBackgroundBackHills');
+            hillyBackgroundBackHills2 = game.add.sprite(hillyBackgroundBackHills2Xpos, hillyBackgroundBackHills2Ypos, 'hillyBackgroundBackHills');
+            hillyBackgroundFrontHills1 = game.add.sprite(hillyBackgroundFrontHills1Xpos, hillyBackgroundFrontHills1Ypos, 'hillyBackgroundFrontHills');
+            hillyBackgroundFrontHills2 = game.add.sprite(hillyBackgroundFrontHills2Xpos, hillyBackgroundFrontHills2Ypos, 'hillyBackgroundFrontHills');
+            hillyBackgroundFence1 = game.add.sprite(hillyBackgroundFence1Xpos, hillyBackgroundFence1Ypos, 'hillyBackgroundFence');
+            hillyBackgroundFence2 = game.add.sprite(hillyBackgroundFence2Xpos, hillyBackgroundFence2Ypos, 'hillyBackgroundFence');
+            hillyBackgroundClouds1 = game.add.sprite(hillyBackgroundClouds1Xpos, hillyBackgroundClouds1Ypos, 'hillyBackgroundClouds');
+            hillyBackgroundClouds2 = game.add.sprite(hillyBackgroundClouds2Xpos, hillyBackgroundClouds2Ypos, 'hillyBackgroundClouds');
+        }
+        else if (LevelType == "City Day")
+        {
+            cityDayBackgroundSky1 = game.add.sprite(cityDayBackgroundSky1Xpos, cityDayBackgroundSky1Ypos, 'cityDayBackgroundSky');
+            cityDayBackgroundSky2 = game.add.sprite(cityDayBackgroundSky2Xpos, cityDayBackgroundSky2Ypos, 'cityDayBackgroundSky');
+            cityDayBackgroundBuildings1 = game.add.sprite(cityDayBackgroundBuildings1Xpos, cityDayBackgroundBuildings1Ypos, 'cityDayBackgroundBuildings');
+            cityDayBackgroundBuildings2 = game.add.sprite(cityDayBackgroundBuildings2Xpos, cityDayBackgroundBuildings2Ypos, 'cityDayBackgroundBuildings');
+            cityDayBackgroundRoad1 = game.add.sprite(cityDayBackgroundRoad1Xpos, cityDayBackgroundRoad1Ypos, 'cityDayBackgroundRoad');
+            cityDayBackgroundRoad2 = game.add.sprite(cityDayBackgroundRoad2Xpos, cityDayBackgroundRoad2Ypos, 'cityDayBackgroundRoad');
+        }
+        else
+        {
+            cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
+            cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
+            cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
+            cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
+            cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
+            cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
         }
     }
     
