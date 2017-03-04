@@ -702,10 +702,10 @@ window.onload = function () {
         update: function () {
             game.physics.arcade.collide(player, Platforms, LandCheck);
 
-            //if (player.body.velocity.y < 0)
-            //{
-                //backgroundUpdate();
-            //}
+//            if (player.body.velocity.y < 0)
+//            {
+//                backgroundUpdate();
+//            }
             
             if (player.x < 0) {
                 Kill();
