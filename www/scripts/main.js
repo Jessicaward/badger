@@ -645,6 +645,7 @@ window.onload = function () {
             }
 
             game.load.image("player", "images/player.png");
+            game.load.image("player jump", "images/player jump.png");
 
             if (LevelType == "Hilly") {
                 game.load.image("hillyPlatform", "images/Hilly/platform.png");
@@ -706,6 +707,20 @@ window.onload = function () {
 //            {
 //                backgroundUpdate();
 //            }
+            
+            //change the player sprite to jumping or standing
+            if (IsJumping == true)
+            {
+                player.loadTexture('player jump');
+            }
+            else if(IsFalling == true)
+            {
+                player.loadTexture('player jump');
+            }
+            else
+            {
+                player.loadTexture('player');
+            }
             
             if (player.x < 0) {
                 Kill();
