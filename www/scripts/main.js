@@ -711,6 +711,7 @@ window.onload = function () {
             //change the player sprite to jumping or standing
             if (IsJumping == true)
             {
+                
                 player.loadTexture('player jump');
             }
             else if(IsFalling == true)
@@ -1238,7 +1239,7 @@ window.onload = function () {
                 score += platformDiff;
                 scoreUpdate();
                 player.lastPlatform = platformm.platformNumber;
-                player.x = 80;
+                //player.x = 80;
             }
             
             if (IsJumping){
@@ -1281,7 +1282,6 @@ window.onload = function () {
         else{
             Phaser.Sprite.call(this, game, x, y, "cityNightPlatformMedium");
         }
-
         game.physics.enable(this, Phaser.Physics.ARCADE);
         this.body.immovable = true;
         this.platformNumber = NumberOfPlatforms;
