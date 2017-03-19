@@ -126,7 +126,7 @@ window.onload = function () {
     var maximumPlatformGap = 300;
     var Language = "English";
     //Original LevelType (Will only affect first menus before game as it redefines before playing)
-    var LevelType = "City Night"; //Hilly, City Day, City Night
+    var LevelType = "Hilly"; //Hilly, City Day, City Night
     var HasSound = true;
     var IsParallax = true;
     //Set the game speed (Used to calculate variables such as background speeds)
@@ -743,31 +743,7 @@ window.onload = function () {
     create:function()
         {
             createBackgrounds();
-            
-            if (Language == "English")
-            {
-                scoreText = game.add.text(game.width / 2 - 65, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 100, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
-            else if (Language == "French")
-            {
-                scoreText = game.add.text(game.width / 2 - 135, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 195, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
-            else
-            {
-                scoreText = game.add.text(game.width / 2 - 105, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 165, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
+            gameOverText();
             
             homeButton = game.add.button(homeButtonX, homeButtonY, 'homeButton', HomeFunction, this);
             restartButton = game.add.button(restartButtonX, restartButtonY, 'restartButton', RestartFunction, this);
@@ -780,30 +756,7 @@ window.onload = function () {
             scoreText.destroy();
             bestScoreText.destroy();
             
-            if (Language == "English")
-            {
-                scoreText = game.add.text(game.width / 2 - 65, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 100, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
-            else if (Language == "French")
-            {
-                scoreText = game.add.text(game.width / 2 - 135, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 195, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
-            else
-            {
-                scoreText = game.add.text(game.width / 2 - 95, 201,"-",{
-                                          font:"bold 26px Arial"
-                                          });
-                bestScoreText = game.add.text(game.width / 2 - 165, 231,"-",{
-                                              font:"bold 26px Arial" });
-            }
+            gameOverText();
             
             if (Language == "English")
             {
@@ -829,6 +782,57 @@ window.onload = function () {
             
             restartButton = game.add.button(restartButtonX, restartButtonY, 'restartButton', RestartFunction, this);
             restartButton.onInputDown.add(RestartFunction, this);
+        }
+    }
+    
+    function gameOverText(){
+        if (Language == "English" && LevelType == "Hilly" || Language == "English" && LevelType == "City Day")
+        {
+            scoreText = game.add.text(game.width / 2 - 65, 201,"-",{
+                                      font:"bold 26px Arial"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 100, 231,"-",{
+                                          font:"bold 26px Arial" });
+        }
+        else if (Language == "French" && LevelType == "Hilly" || Language == "French" && LevelType == "City Day")
+        {
+            scoreText = game.add.text(game.width / 2 - 135, 201,"-",{
+                                      font:"bold 26px Arial"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 195, 231,"-",{
+                                          font:"bold 26px Arial" });
+        }
+        else if (Language == "German" && LevelType == "Hilly" || Language == "German" && LevelType == "City Day")
+        {
+            scoreText = game.add.text(game.width / 2 - 105, 201,"-",{
+                                      font:"bold 26px Arial"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 165, 231,"-",{
+                                          font:"bold 26px Arial" });
+        }
+        else if (Language == "English" && LevelType == "City Night")
+        {
+            scoreText = game.add.text(game.width / 2 - 65, 201,"-",{
+                                      font:"bold 26px Arial", fill :"#ffffff"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 100, 231,"-",{
+                                          font:"bold 26px Arial", fill :"#ffffff" });
+        }
+        else if (Language == "French" && LevelType == "City Night")
+        {
+            scoreText = game.add.text(game.width / 2 - 135, 201,"-",{
+                                      font:"bold 26px Arial", fill :"#ffffff"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 195, 231,"-",{
+                                          font:"bold 26px Arial", fill :"#ffffff" });
+        }
+        else if (Language == "German" && LevelType == "City Night")
+        {
+            scoreText = game.add.text(game.width / 2 - 105, 201,"-",{
+                                      font:"bold 26px Arial", fill :"#ffffff"
+                                      });
+            bestScoreText = game.add.text(game.width / 2 - 165, 231,"-",{
+                                          font:"bold 26px Arial", fill :"#ffffff" });
         }
     }
     
