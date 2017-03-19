@@ -126,7 +126,7 @@ window.onload = function () {
     var maximumPlatformGap = 300;
     var Language = "English";
     //Original LevelType (Will only affect first menus before game as it redefines before playing)
-    var LevelType = "Hilly"; //Hilly, City Day, City Night
+    var LevelType = "City Night"; //Hilly, City Day, City Night
     var HasSound = true;
     var IsParallax = true;
     //Set the game speed (Used to calculate variables such as background speeds)
@@ -302,7 +302,6 @@ window.onload = function () {
             game.load.image('cityNightBackgroundBuildings', "images/City Night/city.png");
             game.load.image('cityNightBackgroundRoad', "images/City Night/road.png");
             game.load.image('cityNightBackgroundSky', "images/City Night/sky.png");
-            game.load.image('playerImage', 'images/player.png');
             
             game.load.image('DigitalBullStudiosButton', "images/DigitalBullStudios.png");
         },
@@ -942,14 +941,14 @@ window.onload = function () {
             if (cityNightBackgroundBuildings2Xpos >= 1199) {
                 cityNightBackgroundBuildings2Xpos = -1199;
             }
-
+            
             if (cityNightBackgroundRoad1Xpos >= 1199) {
                 cityNightBackgroundRoad1Xpos = -1199;
             }
             if (cityNightBackgroundRoad2Xpos >= 1199) {
                 cityNightBackgroundRoad2Xpos = -1199;
             }
-
+            
             if (cityNightBackgroundSky1Xpos >= 1199) {
                 cityNightBackgroundSky1Xpos = -1199;
             }
@@ -1059,19 +1058,19 @@ window.onload = function () {
             cityNightBackgroundSky1.destroy();
             cityNightBackgroundSky2.destroy();
             cityNightBackgroundBuildings1.destroy();
-            cityDayBackgroundBuildings2.destroy();
+            cityNightBackgroundBuildings2.destroy();
             cityNightBackgroundRoad1.destroy();
             cityNightBackgroundRoad2.destroy();
-
-            game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
-            game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
-            game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
-            game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
-            game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
-            game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
+            
+            cityNightBackgroundSky1 = game.add.sprite(cityNightBackgroundSky1Xpos, cityNightBackgroundSky1Ypos, 'cityNightBackgroundSky');
+            cityNightBackgroundSky2 = game.add.sprite(cityNightBackgroundSky2Xpos, cityNightBackgroundSky2Ypos, 'cityNightBackgroundSky');
+            cityNightBackgroundBuildings1 = game.add.sprite(cityNightBackgroundBuildings1Xpos, cityNightBackgroundBuildings1Ypos, 'cityNightBackgroundBuildings');
+            cityNightBackgroundBuildings2 = game.add.sprite(cityNightBackgroundBuildings2Xpos, cityNightBackgroundBuildings2Ypos, 'cityNightBackgroundBuildings');
+            cityNightBackgroundRoad1 = game.add.sprite(cityNightBackgroundRoad1Xpos, cityNightBackgroundRoad1Ypos, 'cityNightBackgroundRoad');
+            cityNightBackgroundRoad2 = game.add.sprite(cityNightBackgroundRoad2Xpos, cityNightBackgroundRoad2Ypos, 'cityNightBackgroundRoad');
         }
     }
-
+    
     function scoreUpdate() {
         if (Language == "English") {
             scoreText.text = "Score: " + score;
