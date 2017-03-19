@@ -633,10 +633,10 @@ window.onload = function () {
         preload: function () {
             BackgroundNumber = Math.random();
 
-            if (BackgroundNumber < 0.5 && LevelType == "Hilly" || BackgroundNumber < 0.5 && LevelType == "City Day") {
+            if (BackgroundNumber <=0.3 && LevelType == "Hilly" || BackgroundNumber <=0.3 && LevelType == "City Day") {
                 LevelType = "Hilly";
             }
-            else if (BackgroundNumber >= 0.5 && LevelType == "Hilly" || BackgroundNumber >= 0.5 && LevelType == "City Day") {
+            else if (BackgroundNumber >0.3 && BackgroundNumber <=0.6 && LevelType == "Hilly" || BackgroundNumber >0.3 && BackgroundNumber <=0.6 && LevelType == "City Day") {
                 LevelType = "City Day";
             }
             else {
