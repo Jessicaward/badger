@@ -633,13 +633,13 @@ window.onload = function () {
         preload: function () {
             BackgroundNumber = Math.random();
 
-            if (BackgroundNumber <=0.3 && LevelType == "Hilly" || BackgroundNumber <=0.3 && LevelType == "City Day") {
+            if (BackgroundNumber <=0.3) {
                 LevelType = "Hilly";
             }
-            else if (BackgroundNumber >0.3 && BackgroundNumber <=0.6 && LevelType == "Hilly" || BackgroundNumber >0.3 && BackgroundNumber <=0.6 && LevelType == "City Day") {
+            else if (BackgroundNumber >0.3 && BackgroundNumber <=0.6) {
                 LevelType = "City Day";
             }
-            else {
+            else if (BackgroundNumber >0.6 && BackgroundNumber <=0.9) {
                 LevelType = "City Night";
             }
 
@@ -685,10 +685,15 @@ window.onload = function () {
             jumps = 0;
             Platforms = game.add.group();
             bestScore = localStorage.getItem("TopScoreFile") == null ? 0 : localStorage.getItem("TopScoreFile");
-            scoreText = game.add.text(10, 10, "-", {
-                font: "bold 26px Arial"
-            });
-
+            if (LevelType == "Hilly" || LevelType == "City Day")
+            {
+                scoreText = game.add.text(10, 10, "-", {font: "bold 26px Arial"});
+            }
+            else
+            {
+                scoreText = game.add.text(10, 10, "-", {font: "bold 26px Arial", fill: "#ffffff"});
+            }
+            
             scoreUpdate();
             game.physics.startSystem(Phaser.Physics.ARCADE);
             player = game.add.sprite(80, 0, "player");
