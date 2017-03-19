@@ -287,6 +287,9 @@
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 5Q78NZ7XGT;
 						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
