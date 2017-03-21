@@ -794,10 +794,10 @@ window.onload = function () {
                     game.world.bringToTop(Platforms);
                     foregroundPlayUpdate();
                     player.bringToTop();
+                    strengthBar.bringToTop();
                     scoreText.bringToTop();
                 }
             }
-            
         }
     }
 
