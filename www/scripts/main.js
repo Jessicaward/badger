@@ -266,6 +266,7 @@ window.onload = function () {
         localStorage.setItem("ParallaxFile", IsParallax);
     }
     
+    
     var menu = function (game) { }
     menu.prototype =
     {
