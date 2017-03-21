@@ -751,10 +751,10 @@ window.onload = function () {
         update: function () {
             game.physics.arcade.collide(player, Platforms, LandCheck);
 
-//            if (player.body.velocity.y < 0)
-//            {
-//                backgroundUpdate();
-//            }
+            if (IsFalling == true || IsJumping == true)
+            {
+                backgroundUpdate();
+            }
             
             //change the player sprite to jumping or standing
             if (IsJumping == true)
@@ -778,6 +778,11 @@ window.onload = function () {
             if (player.y > game.height) {
                 Kill();
             }
+            
+            //Brings platforms and player to front so that the backgrounds don't show first
+            game.world.bringToTop(Platforms);
+            player.bringToTop();
+            scoreText.bringToTop();
         }
     }
 
