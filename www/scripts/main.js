@@ -365,27 +365,54 @@ window.onload = function () {
     {
         //Preload function (Called once)
         preload: function () {
-            game.load.image('enSoundOnButton', "images/Language/English/English Sound On.png");
-            game.load.image('enSoundOffButton', "images/Language/English/English Sound Off.png");
-            game.load.image('enParallaxOnButton', "images/Language/English/English Parallax On.png");
-            game.load.image('enParallaxOffButton', "images/Language/English/English Parallax Off.png");
-            game.load.image('enLanguageButton', "images/Language/English/Language- English.png");
-            game.load.image('enResetScoreButton', "images/Language/English/English Reset Score.png");
-            game.load.image('enBackButton', "images/Language/English/English Back.png");
-            game.load.image('frSoundOnButton', "images/Language/French/French Sound On.png");
-            game.load.image('frSoundOffButton', "images/Language/French/French Sound Off.png");
-            game.load.image('frParallaxOnButton', "images/Language/French/French Parallax On.png");
-            game.load.image('frParallaxOffButton', "images/Language/French/French Parallax Off.png");
-            game.load.image('frLanguageButton', "images/Language/French/French Language French.png");
-            game.load.image('frResetScoreButton', "images/Language/French/French Reset Score.png");
-            game.load.image('frBackButton', "images/Language/French/French Back.png");
-            game.load.image('gerSoundOnButton', "images/Language/German/German Sound On.png");
-            game.load.image('gerSoundOffButton', "images/Language/German/German Sound Off.png");
-            game.load.image('gerParallaxOnButton', "images/Language/German/German Parallax On.png");
-            game.load.image('gerParallaxOffButton', "images/Language/German/German Parallax Off.png");
-            game.load.image('gerLanguageButton', "images/Language/German/German Langauage German.png");
-            game.load.image('gerResetScoreButton', "images/Language/German/German Reset Score.png");
-            game.load.image('gerBackButton', "images/Language/German/German Back.png");
+            if (LevelType == "Hilly" || LevelType == "City Day")
+            {
+                game.load.image('enSoundOnButton', "images/Language/English/English Sound On.png");
+                game.load.image('enSoundOffButton', "images/Language/English/English Sound Off.png");
+                game.load.image('enParallaxOnButton', "images/Language/English/English Parallax On.png");
+                game.load.image('enParallaxOffButton', "images/Language/English/English Parallax Off.png");
+                game.load.image('enLanguageButton', "images/Language/English/Language- English.png");
+                game.load.image('enResetScoreButton', "images/Language/English/English Reset Score.png");
+                game.load.image('enBackButton', "images/Language/English/English Back.png");
+                game.load.image('frSoundOnButton', "images/Language/French/French Sound On.png");
+                game.load.image('frSoundOffButton', "images/Language/French/French Sound Off.png");
+                game.load.image('frParallaxOnButton', "images/Language/French/French Parallax On.png");
+                game.load.image('frParallaxOffButton', "images/Language/French/French Parallax Off.png");
+                game.load.image('frLanguageButton', "images/Language/French/French Language French.png");
+                game.load.image('frResetScoreButton', "images/Language/French/French Reset Score.png");
+                game.load.image('frBackButton', "images/Language/French/French Back.png");
+                game.load.image('gerSoundOnButton', "images/Language/German/German Sound On.png");
+                game.load.image('gerSoundOffButton', "images/Language/German/German Sound Off.png");
+                game.load.image('gerParallaxOnButton', "images/Language/German/German Parallax On.png");
+                game.load.image('gerParallaxOffButton', "images/Language/German/German Parallax Off.png");
+                game.load.image('gerLanguageButton', "images/Language/German/German Langauage German.png");
+                game.load.image('gerResetScoreButton', "images/Language/German/German Reset Score.png");
+                game.load.image('gerBackButton', "images/Language/German/German Back.png");
+            }
+            else
+            {
+                game.load.image('enSoundOnButton', "images/Language/English/English Sound On Night.png");
+                game.load.image('enSoundOffButton', "images/Language/English/English Sound Off Night.png");
+                game.load.image('enParallaxOnButton', "images/Language/English/English Parallax On Night.png");
+                game.load.image('enParallaxOffButton', "images/Language/English/English Parallax Off Night.png");
+                game.load.image('enLanguageButton', "images/Language/English/Language- English Night.png");
+                game.load.image('enResetScoreButton', "images/Language/English/English Reset Score Night.png");
+                game.load.image('enBackButton', "images/Language/English/English Back Night.png");
+                game.load.image('frSoundOnButton', "images/Language/French/French Sound On.png");
+                game.load.image('frSoundOffButton', "images/Language/French/French Sound Off.png");
+                game.load.image('frParallaxOnButton', "images/Language/French/French Parallax On.png");
+                game.load.image('frParallaxOffButton', "images/Language/French/French Parallax Off.png");
+                game.load.image('frLanguageButton', "images/Language/French/French Language French.png");
+                game.load.image('frResetScoreButton', "images/Language/French/French Reset Score.png");
+                game.load.image('frBackButton', "images/Language/French/French Back.png");
+                game.load.image('gerSoundOnButton', "images/Language/German/German Sound On.png");
+                game.load.image('gerSoundOffButton', "images/Language/German/German Sound Off.png");
+                game.load.image('gerParallaxOnButton', "images/Language/German/German Parallax On.png");
+                game.load.image('gerParallaxOffButton', "images/Language/German/German Parallax Off.png");
+                game.load.image('gerLanguageButton', "images/Language/German/German Langauage German.png");
+                game.load.image('gerResetScoreButton', "images/Language/German/German Reset Score.png");
+                game.load.image('gerBackButton', "images/Language/German/German Back.png");
+            }
             game.load.image('hillyBackgroundSKY', "images/Hilly/Sky.png");
             game.load.image('hillyBackgroundBackHills', "images/Hilly/Back Hills.png");
             game.load.image('hillyBackgroundFrontHills', "images/Hilly/Front Hills.png");
@@ -548,16 +575,31 @@ window.onload = function () {
             game.load.image('cityNightBackgroundBuildings', "images/City Night/city.png");
             game.load.image('cityNightBackgroundRoad', "images/City Night/road.png");
             game.load.image('cityNightBackgroundSky', "images/City Night/sky.png");
-
-            game.load.image('enAYS', "images/Language/English/English AYS.png");
-            game.load.image('enYes', "images/Language/English/English Yes.png");
-            game.load.image('enNo', "images/Language/English/English No.png");
-            game.load.image('frAYS', "images/Language/French/French AYS.png");
-            game.load.image('frYes', "images/Language/French/French Yes.png");
-            game.load.image('frNo', "images/Language/French/French No.png");
-            game.load.image('gerAYS', "images/Language/German/German AYS.png");
-            game.load.image('gerYes', "images/Language/German/German Yes.png");
-            game.load.image('gerNo', "images/Language/German/German No.png");
+            
+            if (LevelType == "Hilly" || LevelType == "City Day")
+            {
+                game.load.image('enAYS', "images/Language/English/English AYS.png");
+                game.load.image('enYes', "images/Language/English/English Yes.png");
+                game.load.image('enNo', "images/Language/English/English No.png");
+                game.load.image('frAYS', "images/Language/French/French AYS.png");
+                game.load.image('frYes', "images/Language/French/French Yes.png");
+                game.load.image('frNo', "images/Language/French/French No.png");
+                game.load.image('gerAYS', "images/Language/German/German AYS.png");
+                game.load.image('gerYes', "images/Language/German/German Yes.png");
+                game.load.image('gerNo', "images/Language/German/German No.png");
+            }
+            else
+            {
+                game.load.image('enAYS', "images/Language/English/English AYS.png");
+                game.load.image('enYes', "images/Language/English/English Yes Night.png");
+                game.load.image('enNo', "images/Language/English/English No Night.png");
+                game.load.image('frAYS', "images/Language/French/French AYS.png");
+                game.load.image('frYes', "images/Language/French/French Yes.png");
+                game.load.image('frNo', "images/Language/French/French No.png");
+                game.load.image('gerAYS', "images/Language/German/German AYS.png");
+                game.load.image('gerYes', "images/Language/German/German Yes.png");
+                game.load.image('gerNo', "images/Language/German/German No.png");
+            }
         },
 
         //Create function (Called once)
