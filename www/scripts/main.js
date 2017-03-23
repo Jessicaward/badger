@@ -996,98 +996,98 @@ window.onload = function () {
 
     function backgroundUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundSky1Xpos >= 1199) {
-                hillyBackgroundSky1Xpos = -1199;
+            if (hillyBackgroundSky1Xpos <= -1199) {
+                hillyBackgroundSky1Xpos = 1199;
             }
-            if (hillyBackgroundSky2Xpos >= 1199) {
-                hillyBackgroundSky2Xpos = -1199;
-            }
-
-            if (hillyBackgroundBackHills1Xpos >= 1199) {
-                hillyBackgroundBackHills1Xpos = -1199;
-            }
-            if (hillyBackgroundBackHills2Xpos >= 1199) {
-                hillyBackgroundBackHills2Xpos = -1199;
+            if (hillyBackgroundSky2Xpos <= -1199) {
+                hillyBackgroundSky2Xpos = 1199;
             }
 
-            if (hillyBackgroundFrontHills1Xpos >= 1199) {
-                hillyBackgroundFrontHills1Xpos = -1199;
+            if (hillyBackgroundBackHills1Xpos <= -1199) {
+                hillyBackgroundBackHills1Xpos = 1199;
             }
-            if (hillyBackgroundFrontHills2Xpos >= 1199) {
-                hillyBackgroundFrontHills2Xpos = -1199;
-            }
-
-            if (hillyBackgroundFence1Xpos >= 1199) {
-                hillyBackgroundFence1Xpos = -1199;
-            }
-            if (hillyBackgroundFence2Xpos >= 1199) {
-                hillyBackgroundFence2Xpos = -1199;
+            if (hillyBackgroundBackHills2Xpos <= -1199) {
+                hillyBackgroundBackHills2Xpos = 1199;
             }
 
-            if (hillyBackgroundClouds1Xpos >= 1199) {
-                hillyBackgroundClouds1Xpos = -1199;
+            if (hillyBackgroundFrontHills1Xpos <= -1199) {
+                hillyBackgroundFrontHills1Xpos = 1199;
             }
-            if (hillyBackgroundClouds2Xpos >= 1199) {
-                hillyBackgroundClouds2Xpos = -1199;
+            if (hillyBackgroundFrontHills2Xpos <= -1199) {
+                hillyBackgroundFrontHills2Xpos = 1199;
+            }
+
+            if (hillyBackgroundFence1Xpos <= -1199) {
+                hillyBackgroundFence1Xpos = 1199;
+            }
+            if (hillyBackgroundFence2Xpos <= -1199) {
+                hillyBackgroundFence2Xpos = 1199;
+            }
+
+            if (hillyBackgroundClouds1Xpos <= -1199) {
+                hillyBackgroundClouds1Xpos = 1199;
+            }
+            if (hillyBackgroundClouds2Xpos <= -1199) {
+                hillyBackgroundClouds2Xpos = 1199;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundBuildings1Xpos >= 1199) {
-                cityDayBackgroundBuildings1Xpos = -1199;
+            if (cityDayBackgroundBuildings1Xpos <= -1199) {
+                cityDayBackgroundBuildings1Xpos = 1199;
             }
-            if (cityDayBackgroundBuildings2Xpos >= 1199) {
-                cityDayBackgroundBuildings2Xpos = -1199;
-            }
-
-            if (cityDayBackgroundRoad1Xpos >= 1199) {
-                cityDayBackgroundRoad1Xpos = -1199;
-            }
-            if (cityDayBackgroundRoad2Xpos >= 1199) {
-                cityDayBackgroundRoad2Xpos = -1199;
+            if (cityDayBackgroundBuildings2Xpos <= -1199) {
+                cityDayBackgroundBuildings2Xpos = 1199;
             }
 
-            if (cityDayBackgroundSky1Xpos >= 1199) {
-                cityDayBackgroundSky1Xpos = -1199;
+            if (cityDayBackgroundRoad1Xpos <= -1199) {
+                cityDayBackgroundRoad1Xpos = 1199;
             }
-            if (cityDayBackgroundSky2Xpos >= 1199) {
-                cityDayBackgroundSky2Xpos = -1199;
+            if (cityDayBackgroundRoad2Xpos <= -1199) {
+                cityDayBackgroundRoad2Xpos = 1199;
+            }
+
+            if (cityDayBackgroundSky1Xpos <= -1199) {
+                cityDayBackgroundSky1Xpos = 1199;
+            }
+            if (cityDayBackgroundSky2Xpos <= -1199) {
+                cityDayBackgroundSky2Xpos = 1199;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundBuildings1Xpos >= 1199) {
-                cityNightBackgroundBuildings1Xpos = -1199;
+            if (cityNightBackgroundBuildings1Xpos <= -1199) {
+                cityNightBackgroundBuildings1Xpos = 1199;
             }
-            if (cityNightBackgroundBuildings2Xpos >= 1199) {
-                cityNightBackgroundBuildings2Xpos = -1199;
-            }
-            
-            if (cityNightBackgroundRoad1Xpos >= 1199) {
-                cityNightBackgroundRoad1Xpos = -1199;
-            }
-            if (cityNightBackgroundRoad2Xpos >= 1199) {
-                cityNightBackgroundRoad2Xpos = -1199;
+            if (cityNightBackgroundBuildings2Xpos <= -1199) {
+                cityNightBackgroundBuildings2Xpos = 1199;
             }
             
-            if (cityNightBackgroundSky1Xpos >= 1199) {
-                cityNightBackgroundSky1Xpos = -1199;
+            if (cityNightBackgroundRoad1Xpos <= -1199) {
+                cityNightBackgroundRoad1Xpos = 1199;
             }
-            if (cityNightBackgroundSky2Xpos >= 1199) {
-                cityNightBackgroundSky2Xpos = -1199;
+            if (cityNightBackgroundRoad2Xpos <= -1199) {
+                cityNightBackgroundRoad2Xpos = 1199;
+            }
+            
+            if (cityNightBackgroundSky1Xpos <= -1199) {
+                cityNightBackgroundSky1Xpos = 1199;
+            }
+            if (cityNightBackgroundSky2Xpos <= -1199) {
+                cityNightBackgroundSky2Xpos = 1199;
             }
         }
         
         if (LevelType == "Hilly") {
             if (IsParallax == true) {
-                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos + (gameSpeed / 5);
-                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos + (gameSpeed / 5);
-                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos + (gameSpeed / 4);
-                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos + (gameSpeed / 4);
-                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos + (gameSpeed / 2);
-                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos + (gameSpeed / 1.2);
-                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos + (gameSpeed / 1.2);
-                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos + (gameSpeed / 6);
-                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos + (gameSpeed / 6);
+                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos - (gameSpeed / 5);
+                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos - (gameSpeed / 5);
+                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos - (gameSpeed / 4);
+                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos - (gameSpeed / 4);
+                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos - (gameSpeed / 2);
+                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos - (gameSpeed / 1.2);
+                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos - (gameSpeed / 1.2);
+                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos - (gameSpeed / 6);
+                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos - (gameSpeed / 6);
             }
             else {
                 hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos + (gameSpeed / 2);
@@ -1126,20 +1126,20 @@ window.onload = function () {
         }
         else if (LevelType == "City Day") {
             if (IsParallax == true) {
-                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos + (gameSpeed / 7);
-                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos + (gameSpeed / 7);
-                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos + (gameSpeed / 2);
-                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos + (gameSpeed / 2);
-                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos + (gameSpeed / 1.2);
-                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos + (gameSpeed / 1.2);
+                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos - (gameSpeed / 7);
+                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos - (gameSpeed / 7);
+                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos - (gameSpeed / 2);
+                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos - (gameSpeed / 2);
+                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos - (gameSpeed / 1.2);
+                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos - (gameSpeed / 1.2);
             }
             else {
-                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos + (gameSpeed / 3);
-                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos + (gameSpeed / 3);
-                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos + (gameSpeed / 3);
-                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos + (gameSpeed / 3);
-                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos + (gameSpeed / 3);
-                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos + (gameSpeed / 3);
+                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos - (gameSpeed / 3);
+                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos - (gameSpeed / 3);
+                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos - (gameSpeed / 3);
+                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos - (gameSpeed / 3);
+                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos - (gameSpeed / 3);
+                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos - (gameSpeed / 3);
             }
 
             cityDayBackgroundSky1.destroy();
@@ -1158,20 +1158,20 @@ window.onload = function () {
         }
         else {
             if (IsParallax == true) {
-                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos + (gameSpeed / 7);
-                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos + (gameSpeed / 7);
-                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos + (gameSpeed / 2);
-                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos + (gameSpeed / 2);
-                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos + (gameSpeed / 1.2);
-                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos + (gameSpeed / 1.2);
+                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos - (gameSpeed / 7);
+                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos - (gameSpeed / 7);
+                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos - (gameSpeed / 2);
+                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos - (gameSpeed / 2);
+                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos - (gameSpeed / 1.2);
+                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos - (gameSpeed / 1.2);
             }
             else {
-                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos + (gameSpeed / 3);
-                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos + (gameSpeed / 3);
-                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos + (gameSpeed / 3);
-                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos + (gameSpeed / 3);
-                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos + (gameSpeed / 3);
-                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos + (gameSpeed / 3);
+                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos - (gameSpeed / 3);
+                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos - (gameSpeed / 3);
+                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos - (gameSpeed / 3);
+                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos - (gameSpeed / 3);
+                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos - (gameSpeed / 3);
+                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos - (gameSpeed / 3);
             }
             
             cityNightBackgroundSky1.destroy();
@@ -1192,74 +1192,74 @@ window.onload = function () {
     
     function backgroundPlayUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundSky1Xpos >= 1199) {
-                hillyBackgroundSky1Xpos = -1199;
+            if (hillyBackgroundSky1Xpos <= -1199) {
+                hillyBackgroundSky1Xpos = 1199;
             }
-            if (hillyBackgroundSky2Xpos >= 1199) {
-                hillyBackgroundSky2Xpos = -1199;
-            }
-            
-            if (hillyBackgroundBackHills1Xpos >= 1199) {
-                hillyBackgroundBackHills1Xpos = -1199;
-            }
-            if (hillyBackgroundBackHills2Xpos >= 1199) {
-                hillyBackgroundBackHills2Xpos = -1199;
+            if (hillyBackgroundSky2Xpos <= -1199) {
+                hillyBackgroundSky2Xpos = 1199;
             }
             
-            if (hillyBackgroundFrontHills1Xpos >= 1199) {
-                hillyBackgroundFrontHills1Xpos = -1199;
+            if (hillyBackgroundBackHills1Xpos <= -1199) {
+                hillyBackgroundBackHills1Xpos = 1199;
             }
-            if (hillyBackgroundFrontHills2Xpos >= 1199) {
-                hillyBackgroundFrontHills2Xpos = -1199;
+            if (hillyBackgroundBackHills2Xpos <= -1199) {
+                hillyBackgroundBackHills2Xpos = 1199;
+            }
+            
+            if (hillyBackgroundFrontHills1Xpos <= -1199) {
+                hillyBackgroundFrontHills1Xpos = 1199;
+            }
+            if (hillyBackgroundFrontHills2Xpos <= -1199) {
+                hillyBackgroundFrontHills2Xpos = 1199;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundBuildings1Xpos >= 1199) {
-                cityDayBackgroundBuildings1Xpos = -1199;
+            if (cityDayBackgroundBuildings1Xpos <= -1199) {
+                cityDayBackgroundBuildings1Xpos = 1199;
             }
-            if (cityDayBackgroundBuildings2Xpos >= 1199) {
-                cityDayBackgroundBuildings2Xpos = -1199;
+            if (cityDayBackgroundBuildings2Xpos <= -1199) {
+                cityDayBackgroundBuildings2Xpos = 1199;
             }
             
-            if (cityDayBackgroundSky1Xpos >= 1199) {
-                cityDayBackgroundSky1Xpos = -1199;
+            if (cityDayBackgroundSky1Xpos <= -1199) {
+                cityDayBackgroundSky1Xpos = 1199;
             }
-            if (cityDayBackgroundSky2Xpos >= 1199) {
-                cityDayBackgroundSky2Xpos = -1199;
+            if (cityDayBackgroundSky2Xpos <= -1199) {
+                cityDayBackgroundSky2Xpos = 1199;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundBuildings1Xpos >= 1199) {
-                cityNightBackgroundBuildings1Xpos = -1199;
+            if (cityNightBackgroundBuildings1Xpos <= -1199) {
+                cityNightBackgroundBuildings1Xpos = 1199;
             }
-            if (cityNightBackgroundBuildings2Xpos >= 1199) {
-                cityNightBackgroundBuildings2Xpos = -1199;
+            if (cityNightBackgroundBuildings2Xpos <= -1199) {
+                cityNightBackgroundBuildings2Xpos = 1199;
             }
 
-            if (cityNightBackgroundSky1Xpos >= 1199) {
-                cityNightBackgroundSky1Xpos = -1199;
+            if (cityNightBackgroundSky1Xpos <= -1199) {
+                cityNightBackgroundSky1Xpos = 1199;
             }
-            if (cityNightBackgroundSky2Xpos >= 1199) {
-                cityNightBackgroundSky2Xpos = -1199;
+            if (cityNightBackgroundSky2Xpos <= -1199) {
+                cityNightBackgroundSky2Xpos = 1199;
             }
         }
         
         if (LevelType == "Hilly") {
             if (IsParallax == true) {
-                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos + (gameSpeed / 5);
-                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos + (gameSpeed / 5);
-                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos + (gameSpeed / 4);
-                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos + (gameSpeed / 4);
-                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos + (gameSpeed / 2);
+                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos - (gameSpeed / 5);
+                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos - (gameSpeed / 5);
+                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos - (gameSpeed / 4);
+                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos - (gameSpeed / 4);
+                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos - (gameSpeed / 2);
             }
             else {
-                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos + (gameSpeed / 2);
-                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos + (gameSpeed / 2);
-                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos + (gameSpeed / 2);
+                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos - (gameSpeed / 2);
+                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos - (gameSpeed / 2);
+                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos - (gameSpeed / 2);
             }
             
             hillyBackgroundSky1.destroy();
@@ -1278,16 +1278,16 @@ window.onload = function () {
         }
         else if (LevelType == "City Day") {
             if (IsParallax == true) {
-                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos + (gameSpeed / 7);
-                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos + (gameSpeed / 7);
-                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos + (gameSpeed / 2);
-                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos + (gameSpeed / 2);
+                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos - (gameSpeed / 7);
+                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos - (gameSpeed / 7);
+                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos - (gameSpeed / 2);
+                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos - (gameSpeed / 2);
             }
             else {
-                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos + (gameSpeed / 3);
-                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos + (gameSpeed / 3);
-                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos + (gameSpeed / 3);
-                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos + (gameSpeed / 3);
+                cityDayBackgroundSky1Xpos = cityDayBackgroundSky1Xpos - (gameSpeed / 3);
+                cityDayBackgroundSky2Xpos = cityDayBackgroundSky2Xpos - (gameSpeed / 3);
+                cityDayBackgroundBuildings1Xpos = cityDayBackgroundBuildings1Xpos - (gameSpeed / 3);
+                cityDayBackgroundBuildings2Xpos = cityDayBackgroundBuildings2Xpos - (gameSpeed / 3);
             }
             
             cityDayBackgroundSky1.destroy();
@@ -1302,16 +1302,16 @@ window.onload = function () {
         }
         else {
             if (IsParallax == true) {
-                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos + (gameSpeed / 7);
-                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos + (gameSpeed / 7);
-                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos + (gameSpeed / 2);
-                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos + (gameSpeed / 2);
+                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos - (gameSpeed / 7);
+                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos - (gameSpeed / 7);
+                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos - (gameSpeed / 2);
+                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos - (gameSpeed / 2);
             }
             else {
-                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos + (gameSpeed / 3);
-                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos + (gameSpeed / 3);
-                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos + (gameSpeed / 3);
-                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos + (gameSpeed / 3);
+                cityNightBackgroundSky1Xpos = cityNightBackgroundSky1Xpos - (gameSpeed / 3);
+                cityNightBackgroundSky2Xpos = cityNightBackgroundSky2Xpos - (gameSpeed / 3);
+                cityNightBackgroundBuildings1Xpos = cityNightBackgroundBuildings1Xpos - (gameSpeed / 3);
+                cityNightBackgroundBuildings2Xpos = cityNightBackgroundBuildings2Xpos - (gameSpeed / 3);
             }
             
             cityNightBackgroundSky1.destroy();
@@ -1328,49 +1328,49 @@ window.onload = function () {
     
     function foregroundPlayUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundFence1Xpos >= 1199) {
-                hillyBackgroundFence1Xpos = -1199;
+            if (hillyBackgroundFence1Xpos <= -1199) {
+                hillyBackgroundFence1Xpos = 1199;
             }
-            if (hillyBackgroundFence2Xpos >= 1199) {
-                hillyBackgroundFence2Xpos = -1199;
+            if (hillyBackgroundFence2Xpos <= -1199) {
+                hillyBackgroundFence2Xpos = 1199;
             }
             
-            if (hillyBackgroundClouds1Xpos >= 1199) {
-                hillyBackgroundClouds1Xpos = -1199;
+            if (hillyBackgroundClouds1Xpos <= -1199) {
+                hillyBackgroundClouds1Xpos = 1199;
             }
-            if (hillyBackgroundClouds2Xpos >= 1199) {
-                hillyBackgroundClouds2Xpos = -1199;
+            if (hillyBackgroundClouds2Xpos <= -1199) {
+                hillyBackgroundClouds2Xpos = 1199;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundRoad1Xpos >= 1199) {
-                cityDayBackgroundRoad1Xpos = -1199;
+            if (cityDayBackgroundRoad1Xpos <= -1199) {
+                cityDayBackgroundRoad1Xpos = 1199;
             }
-            if (cityDayBackgroundRoad2Xpos >= 1199) {
-                cityDayBackgroundRoad2Xpos = -1199;
+            if (cityDayBackgroundRoad2Xpos <= -1199) {
+                cityDayBackgroundRoad2Xpos = 1199;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundRoad1Xpos >= 1199) {
-                cityNightBackgroundRoad1Xpos = -1199;
+            if (cityNightBackgroundRoad1Xpos <= -1199) {
+                cityNightBackgroundRoad1Xpos = 1199;
             }
-            if (cityNightBackgroundRoad2Xpos >= 1199) {
-                cityNightBackgroundRoad2Xpos = -1199;
+            if (cityNightBackgroundRoad2Xpos <= -1199) {
+                cityNightBackgroundRoad2Xpos = 1199;
             }
         }
         
         if (LevelType == "Hilly") {
             if (IsParallax == true) {
-                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos + (gameSpeed / 1.2);
-                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos + (gameSpeed / 1.2);
-                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos + (gameSpeed / 6);
-                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos + (gameSpeed / 6);
+                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos - (gameSpeed / 0.7);
+                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos - (gameSpeed / 0.7);
+                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos - (gameSpeed / 6);
+                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos - (gameSpeed / 6);
             }
             else {
-                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos + (gameSpeed / 2);
-                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos + (gameSpeed / 2);
-                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos + (gameSpeed / 2);
-                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos + (gameSpeed / 2);
+                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos - (gameSpeed / 2);
+                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos - (gameSpeed / 2);
+                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos - (gameSpeed / 2);
+                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos - (gameSpeed / 2);
             }
             
             hillyBackgroundFence1.destroy();
@@ -1385,12 +1385,12 @@ window.onload = function () {
         }
         else if (LevelType == "City Day") {
             if (IsParallax == true) {
-                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos + (gameSpeed / 1.2);
-                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos + (gameSpeed / 1.2);
+                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos - (gameSpeed / 0.7);
+                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos - (gameSpeed / 0.7);
             }
             else {
-                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos + (gameSpeed / 3);
-                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos + (gameSpeed / 3);
+                cityDayBackgroundRoad1Xpos = cityDayBackgroundRoad1Xpos - (gameSpeed / 3);
+                cityDayBackgroundRoad2Xpos = cityDayBackgroundRoad2Xpos - (gameSpeed / 3);
             }
             
             cityDayBackgroundRoad1.destroy();
@@ -1401,12 +1401,12 @@ window.onload = function () {
         }
         else {
             if (IsParallax == true) {
-                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos + (gameSpeed / 1.2);
-                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos + (gameSpeed / 1.2);
+                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos - (gameSpeed / 0.7);
+                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos - (gameSpeed / 0.7);
             }
             else {
-                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos + (gameSpeed / 3);
-                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos + (gameSpeed / 3);
+                cityNightBackgroundRoad1Xpos = cityNightBackgroundRoad1Xpos - (gameSpeed / 3);
+                cityNightBackgroundRoad2Xpos = cityNightBackgroundRoad2Xpos - (gameSpeed / 3);
             }
             
             cityNightBackgroundRoad1.destroy();
