@@ -148,67 +148,67 @@ window.onload = function () {
     var hillyBackgroundSky1Xpos = 0;
     var hillyBackgroundSky1Ypos = 0;
     var hillyBackgroundSky2;
-    var hillyBackgroundSky2Xpos = -1199;
+    var hillyBackgroundSky2Xpos = -1198;
     var hillyBackgroundSky2Ypos = 0;
     var hillyBackgroundBackHills1;
     var hillyBackgroundBackHills1Xpos = 0;
     var hillyBackgroundBackHills1Ypos = 0;
     var hillyBackgroundBackHills2;
-    var hillyBackgroundBackHills2Xpos = -1199;
+    var hillyBackgroundBackHills2Xpos = -1198;
     var hillyBackgroundBackHills2Ypos = 0;
     var hillyBackgroundFrontHills1;
     var hillyBackgroundFrontHills1Xpos = 0;
     var hillyBackgroundFrontHills1Ypos = 0;
     var hillyBackgroundFrontHills2;
-    var hillyBackgroundFrontHills2Xpos = -1199;
+    var hillyBackgroundFrontHills2Xpos = -1198;
     var hillyBackgroundFrontHills2Ypos = 0;
     var hillyBackgroundFence1;
     var hillyBackgroundFence1Xpos = 0;
     var hillyBackgroundFence1Ypos = 0;
     var hillyBackgroundFence2;
-    var hillyBackgroundFence2Xpos = -1199;
+    var hillyBackgroundFence2Xpos = -1198;
     var hillyBackgroundFence2Ypos = 0;
     var hillyBackgroundClouds1;
     var hillyBackgroundClouds1Xpos = 0;
     var hillyBackgroundClouds1Ypos = 0;
     var hillyBackgroundClouds2;
-    var hillyBackgroundClouds2Xpos = -1199;
+    var hillyBackgroundClouds2Xpos = -1198;
     var hillyBackgroundClouds2Ypos = 0;
     var cityDayBackgroundBuildings1;
     var cityDayBackgroundBuildings1Xpos = 0;
     var cityDayBackgroundBuildings1Ypos = 0;
     var cityDayBackgroundBuildings2;
-    var cityDayBackgroundBuildings2Xpos = -1199;
+    var cityDayBackgroundBuildings2Xpos = -1198;
     var cityDayBackgroundBuildings2Ypos = 0;
     var cityDayBackgroundRoad1;
     var cityDayBackgroundRoad1Xpos = 0;
     var cityDayBackgroundRoad1Ypos = 0;
     var cityDayBackgroundRoad2;
-    var cityDayBackgroundRoad2Xpos = -1199;
+    var cityDayBackgroundRoad2Xpos = -1198;
     var cityDayBackgroundRoad2Ypos = 0;
     var cityDayBackgroundSky1;
     var cityDayBackgroundSky1Xpos = 0;
     var cityDayBackgroundSky1Ypos = 0;
     var cityDayBackgroundSky2;
-    var cityDayBackgroundSky2Xpos = -1199;
+    var cityDayBackgroundSky2Xpos = -1198;
     var cityDayBackgroundSky2Ypos = 0;
     var cityNightBackgroundBuildings1;
     var cityNightBackgroundBuildings1Xpos = 0;
     var cityNightBackgroundBuildings1Ypos = 0;
     var cityNightBackgroundBuildings2;
-    var cityNightBackgroundBuildings2Xpos = -1199;
+    var cityNightBackgroundBuildings2Xpos = -1198;
     var cityNightBackgroundBuildings2Ypos = 0;
     var cityNightBackgroundRoad1;
     var cityNightBackgroundRoad1Xpos = 0;
     var cityNightBackgroundRoad1Ypos = 0;
     var cityNightBackgroundRoad2;
-    var cityNightBackgroundRoad2Xpos = -1199;
+    var cityNightBackgroundRoad2Xpos = -1198;
     var cityNightBackgroundRoad2Ypos = 0;
     var cityNightBackgroundSky1;
     var cityNightBackgroundSky1Xpos = 0;
     var cityNightBackgroundSky1Ypos = 0;
     var cityNightBackgroundSky2;
-    var cityNightBackgroundSky2Xpos = -1199;
+    var cityNightBackgroundSky2Xpos = -1198;
     var cityNightBackgroundSky2Ypos = 0;
     var homeButton;
     var homeButtonX = 320;
@@ -996,83 +996,83 @@ window.onload = function () {
 
     function backgroundUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundSky1Xpos <= -1199) {
-                hillyBackgroundSky1Xpos = 1199;
+            if (hillyBackgroundSky1Xpos <= -1198) {
+                hillyBackgroundSky1Xpos = 1198;
             }
-            if (hillyBackgroundSky2Xpos <= -1199) {
-                hillyBackgroundSky2Xpos = 1199;
-            }
-
-            if (hillyBackgroundBackHills1Xpos <= -1199) {
-                hillyBackgroundBackHills1Xpos = 1199;
-            }
-            if (hillyBackgroundBackHills2Xpos <= -1199) {
-                hillyBackgroundBackHills2Xpos = 1199;
+            if (hillyBackgroundSky2Xpos <= -1198) {
+                hillyBackgroundSky2Xpos = 1198;
             }
 
-            if (hillyBackgroundFrontHills1Xpos <= -1199) {
-                hillyBackgroundFrontHills1Xpos = 1199;
+            if (hillyBackgroundBackHills1Xpos <= -1198) {
+                hillyBackgroundBackHills1Xpos = 1198;
             }
-            if (hillyBackgroundFrontHills2Xpos <= -1199) {
-                hillyBackgroundFrontHills2Xpos = 1199;
-            }
-
-            if (hillyBackgroundFence1Xpos <= -1199) {
-                hillyBackgroundFence1Xpos = 1199;
-            }
-            if (hillyBackgroundFence2Xpos <= -1199) {
-                hillyBackgroundFence2Xpos = 1199;
+            if (hillyBackgroundBackHills2Xpos <= -1198) {
+                hillyBackgroundBackHills2Xpos = 1198;
             }
 
-            if (hillyBackgroundClouds1Xpos <= -1199) {
-                hillyBackgroundClouds1Xpos = 1199;
+            if (hillyBackgroundFrontHills1Xpos <= -1198) {
+                hillyBackgroundFrontHills1Xpos = 1198;
             }
-            if (hillyBackgroundClouds2Xpos <= -1199) {
-                hillyBackgroundClouds2Xpos = 1199;
+            if (hillyBackgroundFrontHills2Xpos <= -1198) {
+                hillyBackgroundFrontHills2Xpos = 1198;
+            }
+
+            if (hillyBackgroundFence1Xpos <= -1198) {
+                hillyBackgroundFence1Xpos = 1198;
+            }
+            if (hillyBackgroundFence2Xpos <= -1198) {
+                hillyBackgroundFence2Xpos = 1198;
+            }
+
+            if (hillyBackgroundClouds1Xpos <= -1198) {
+                hillyBackgroundClouds1Xpos = 1198;
+            }
+            if (hillyBackgroundClouds2Xpos <= -1198) {
+                hillyBackgroundClouds2Xpos = 1198;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundBuildings1Xpos <= -1199) {
-                cityDayBackgroundBuildings1Xpos = 1199;
+            if (cityDayBackgroundBuildings1Xpos <= -1198) {
+                cityDayBackgroundBuildings1Xpos = 1198;
             }
-            if (cityDayBackgroundBuildings2Xpos <= -1199) {
-                cityDayBackgroundBuildings2Xpos = 1199;
-            }
-
-            if (cityDayBackgroundRoad1Xpos <= -1199) {
-                cityDayBackgroundRoad1Xpos = 1199;
-            }
-            if (cityDayBackgroundRoad2Xpos <= -1199) {
-                cityDayBackgroundRoad2Xpos = 1199;
+            if (cityDayBackgroundBuildings2Xpos <= -1198) {
+                cityDayBackgroundBuildings2Xpos = 1198;
             }
 
-            if (cityDayBackgroundSky1Xpos <= -1199) {
-                cityDayBackgroundSky1Xpos = 1199;
+            if (cityDayBackgroundRoad1Xpos <= -1198) {
+                cityDayBackgroundRoad1Xpos = 1198;
             }
-            if (cityDayBackgroundSky2Xpos <= -1199) {
-                cityDayBackgroundSky2Xpos = 1199;
+            if (cityDayBackgroundRoad2Xpos <= -1198) {
+                cityDayBackgroundRoad2Xpos = 1198;
+            }
+
+            if (cityDayBackgroundSky1Xpos <= -1198) {
+                cityDayBackgroundSky1Xpos = 1198;
+            }
+            if (cityDayBackgroundSky2Xpos <= -1198) {
+                cityDayBackgroundSky2Xpos = 1198;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundBuildings1Xpos <= -1199) {
-                cityNightBackgroundBuildings1Xpos = 1199;
+            if (cityNightBackgroundBuildings1Xpos <= -1198) {
+                cityNightBackgroundBuildings1Xpos = 1198;
             }
-            if (cityNightBackgroundBuildings2Xpos <= -1199) {
-                cityNightBackgroundBuildings2Xpos = 1199;
-            }
-            
-            if (cityNightBackgroundRoad1Xpos <= -1199) {
-                cityNightBackgroundRoad1Xpos = 1199;
-            }
-            if (cityNightBackgroundRoad2Xpos <= -1199) {
-                cityNightBackgroundRoad2Xpos = 1199;
+            if (cityNightBackgroundBuildings2Xpos <= -1198) {
+                cityNightBackgroundBuildings2Xpos = 1198;
             }
             
-            if (cityNightBackgroundSky1Xpos <= -1199) {
-                cityNightBackgroundSky1Xpos = 1199;
+            if (cityNightBackgroundRoad1Xpos <= -1198) {
+                cityNightBackgroundRoad1Xpos = 1198;
             }
-            if (cityNightBackgroundSky2Xpos <= -1199) {
-                cityNightBackgroundSky2Xpos = 1199;
+            if (cityNightBackgroundRoad2Xpos <= -1198) {
+                cityNightBackgroundRoad2Xpos = 1198;
+            }
+            
+            if (cityNightBackgroundSky1Xpos <= -1198) {
+                cityNightBackgroundSky1Xpos = 1198;
+            }
+            if (cityNightBackgroundSky2Xpos <= -1198) {
+                cityNightBackgroundSky2Xpos = 1198;
             }
         }
         
@@ -1192,55 +1192,55 @@ window.onload = function () {
     
     function backgroundPlayUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundSky1Xpos <= -1199) {
-                hillyBackgroundSky1Xpos = 1199;
+            if (hillyBackgroundSky1Xpos <= -1198) {
+                hillyBackgroundSky1Xpos = 1198;
             }
-            if (hillyBackgroundSky2Xpos <= -1199) {
-                hillyBackgroundSky2Xpos = 1199;
-            }
-            
-            if (hillyBackgroundBackHills1Xpos <= -1199) {
-                hillyBackgroundBackHills1Xpos = 1199;
-            }
-            if (hillyBackgroundBackHills2Xpos <= -1199) {
-                hillyBackgroundBackHills2Xpos = 1199;
+            if (hillyBackgroundSky2Xpos <= -1198) {
+                hillyBackgroundSky2Xpos = 1198;
             }
             
-            if (hillyBackgroundFrontHills1Xpos <= -1199) {
-                hillyBackgroundFrontHills1Xpos = 1199;
+            if (hillyBackgroundBackHills1Xpos <= -1198) {
+                hillyBackgroundBackHills1Xpos = 1198;
             }
-            if (hillyBackgroundFrontHills2Xpos <= -1199) {
-                hillyBackgroundFrontHills2Xpos = 1199;
+            if (hillyBackgroundBackHills2Xpos <= -1198) {
+                hillyBackgroundBackHills2Xpos = 1198;
+            }
+            
+            if (hillyBackgroundFrontHills1Xpos <= -1198) {
+                hillyBackgroundFrontHills1Xpos = 1198;
+            }
+            if (hillyBackgroundFrontHills2Xpos <= -1198) {
+                hillyBackgroundFrontHills2Xpos = 1198;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundBuildings1Xpos <= -1199) {
-                cityDayBackgroundBuildings1Xpos = 1199;
+            if (cityDayBackgroundBuildings1Xpos <= -1198) {
+                cityDayBackgroundBuildings1Xpos = 1198;
             }
-            if (cityDayBackgroundBuildings2Xpos <= -1199) {
-                cityDayBackgroundBuildings2Xpos = 1199;
+            if (cityDayBackgroundBuildings2Xpos <= -1198) {
+                cityDayBackgroundBuildings2Xpos = 1198;
             }
             
-            if (cityDayBackgroundSky1Xpos <= -1199) {
-                cityDayBackgroundSky1Xpos = 1199;
+            if (cityDayBackgroundSky1Xpos <= -1198) {
+                cityDayBackgroundSky1Xpos = 1198;
             }
-            if (cityDayBackgroundSky2Xpos <= -1199) {
-                cityDayBackgroundSky2Xpos = 1199;
+            if (cityDayBackgroundSky2Xpos <= -1198) {
+                cityDayBackgroundSky2Xpos = 1198;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundBuildings1Xpos <= -1199) {
-                cityNightBackgroundBuildings1Xpos = 1199;
+            if (cityNightBackgroundBuildings1Xpos <= -1198) {
+                cityNightBackgroundBuildings1Xpos = 1198;
             }
-            if (cityNightBackgroundBuildings2Xpos <= -1199) {
-                cityNightBackgroundBuildings2Xpos = 1199;
+            if (cityNightBackgroundBuildings2Xpos <= -1198) {
+                cityNightBackgroundBuildings2Xpos = 1198;
             }
 
-            if (cityNightBackgroundSky1Xpos <= -1199) {
-                cityNightBackgroundSky1Xpos = 1199;
+            if (cityNightBackgroundSky1Xpos <= -1198) {
+                cityNightBackgroundSky1Xpos = 1198;
             }
-            if (cityNightBackgroundSky2Xpos <= -1199) {
-                cityNightBackgroundSky2Xpos = 1199;
+            if (cityNightBackgroundSky2Xpos <= -1198) {
+                cityNightBackgroundSky2Xpos = 1198;
             }
         }
         
@@ -1328,34 +1328,34 @@ window.onload = function () {
     
     function foregroundPlayUpdate() {
         if (LevelType == "Hilly") {
-            if (hillyBackgroundFence1Xpos <= -1199) {
-                hillyBackgroundFence1Xpos = 1199;
+            if (hillyBackgroundFence1Xpos <= -1198) {
+                hillyBackgroundFence1Xpos = 1198;
             }
-            if (hillyBackgroundFence2Xpos <= -1199) {
-                hillyBackgroundFence2Xpos = 1199;
+            if (hillyBackgroundFence2Xpos <= -1198) {
+                hillyBackgroundFence2Xpos = 1198;
             }
             
-            if (hillyBackgroundClouds1Xpos <= -1199) {
-                hillyBackgroundClouds1Xpos = 1199;
+            if (hillyBackgroundClouds1Xpos <= -1198) {
+                hillyBackgroundClouds1Xpos = 1198;
             }
-            if (hillyBackgroundClouds2Xpos <= -1199) {
-                hillyBackgroundClouds2Xpos = 1199;
+            if (hillyBackgroundClouds2Xpos <= -1198) {
+                hillyBackgroundClouds2Xpos = 1198;
             }
         }
         else if (LevelType == "City Day") {
-            if (cityDayBackgroundRoad1Xpos <= -1199) {
-                cityDayBackgroundRoad1Xpos = 1199;
+            if (cityDayBackgroundRoad1Xpos <= -1198) {
+                cityDayBackgroundRoad1Xpos = 1198;
             }
-            if (cityDayBackgroundRoad2Xpos <= -1199) {
-                cityDayBackgroundRoad2Xpos = 1199;
+            if (cityDayBackgroundRoad2Xpos <= -1198) {
+                cityDayBackgroundRoad2Xpos = 1198;
             }
         }
         else if (LevelType == "City Night") {
-            if (cityNightBackgroundRoad1Xpos <= -1199) {
-                cityNightBackgroundRoad1Xpos = 1199;
+            if (cityNightBackgroundRoad1Xpos <= -1198) {
+                cityNightBackgroundRoad1Xpos = 1198;
             }
-            if (cityNightBackgroundRoad2Xpos <= -1199) {
-                cityNightBackgroundRoad2Xpos = 1199;
+            if (cityNightBackgroundRoad2Xpos <= -1198) {
+                cityNightBackgroundRoad2Xpos = 1198;
             }
         }
         
