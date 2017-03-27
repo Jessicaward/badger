@@ -267,7 +267,6 @@ window.onload = function () {
         localStorage.setItem("ParallaxFile", IsParallax);
     }
     
-    
     var menu = function (game) { }
     menu.prototype =
     {
@@ -1090,16 +1089,16 @@ window.onload = function () {
                 hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos - (gameSpeed / 6);
             }
             else {
-                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos + (gameSpeed / 2);
-                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos + (gameSpeed / 2);
-                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos + (gameSpeed / 2);
-                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos + (gameSpeed / 2);
-                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos + (gameSpeed / 2);
-                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos + (gameSpeed / 2);
-                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos + (gameSpeed / 2);
-                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos + (gameSpeed / 2);
+                hillyBackgroundSky1Xpos = hillyBackgroundSky1Xpos - (gameSpeed / 2);
+                hillyBackgroundSky2Xpos = hillyBackgroundSky2Xpos - (gameSpeed / 2);
+                hillyBackgroundBackHills1Xpos = hillyBackgroundBackHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundBackHills2Xpos = hillyBackgroundBackHills2Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills1Xpos = hillyBackgroundFrontHills1Xpos - (gameSpeed / 2);
+                hillyBackgroundFrontHills2Xpos = hillyBackgroundFrontHills2Xpos - (gameSpeed / 2);
+                hillyBackgroundFence1Xpos = hillyBackgroundFence1Xpos - (gameSpeed / 2);
+                hillyBackgroundFence2Xpos = hillyBackgroundFence2Xpos - (gameSpeed / 2);
+                hillyBackgroundClouds1Xpos = hillyBackgroundClouds1Xpos - (gameSpeed / 2);
+                hillyBackgroundClouds2Xpos = hillyBackgroundClouds2Xpos - (gameSpeed / 2);
             }
             
             hillyBackgroundSky1.destroy();
