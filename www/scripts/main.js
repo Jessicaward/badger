@@ -2,8 +2,6 @@ window.onload = function () {
     function randomNo(x, y) {
         return Math.floor(Math.random() * ((y - x) + 1) + x);
     }
-
-    //Make a new variable called game and set it as a Canvas with the dimensions 1000, 750 (OLD: 1000, 563) <- Do not delete
     var game = new Phaser.Game(1000, 563, Phaser.CANVAS);
 
     var enPlayButton;
@@ -1189,6 +1187,7 @@ window.onload = function () {
         }
     }
     
+    //Only called when game is in the play state
     function backgroundPlayUpdate() {
         if (LevelType == "Hilly") {
             if (hillyBackgroundSky1Xpos <= -1198) {
@@ -1325,6 +1324,7 @@ window.onload = function () {
         }
     }
     
+    //Only called when game is in the play state
     function foregroundPlayUpdate() {
         if (LevelType == "Hilly") {
             if (hillyBackgroundFence1Xpos <= -1198) {
