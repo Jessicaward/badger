@@ -127,7 +127,7 @@ window.onload = function () {
     var LevelType = "Hilly"; //Hilly, City Day, City Night
     var HasSound = true;
     var IsParallax = true;
-    //Set the game speed (Used to calculate variables such as background speeds)
+    //Set the game speed (Used to calculate variables such as background speeds) (Set to 2)
     var gameSpeed = 2;
     var player;
     //How long the player has been holding down jump
